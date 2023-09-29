@@ -1,0 +1,122 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Inter', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #0c1117;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    display: flex;
+}
+
+nav {
+    background-color: #f3f3f3;
+    width: 250px;
+    height: 100vh;
+}
+
+#nav-mobile-menu {
+    padding-right: 10px;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title h1 {
+    font-weight: bold;
+    font-size: 125%;
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+.nav-toggle {
+    color: #f3f3f3;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.nav-route ul li {
+    padding: 10px;
+    border-bottom: 1px solid #cbd5e0; 
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.nav-route ul li:first-child {
+    border-top: 1px solid #cbd5e0;
+}
+
+.nav-links {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 430px) {
+    #nav-mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    nav {
+        width: 100%;
+    }
+}
+
+
+
+
+
+.nav-route ul li:hover {
+    background-color: #3a715f;
+    color: #f3f3f3;
+}
+
+.show-items {
+    display: none;
+}
